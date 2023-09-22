@@ -4,7 +4,7 @@
 |**Name**|**NRP**|
 |--------|-------|
 |Muhammad Dzaky Farhan       |5025211069|
-|Satria Surya Prana          |5025211...|
+|Satria Surya Prana          |5025211073|
 
 ## **Number 1**
 **The user is performing various activities using the FTP protocol. One of them is uploading a file..**
