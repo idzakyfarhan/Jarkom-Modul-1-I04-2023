@@ -36,6 +36,55 @@ As seen in the above image, the raw sequence number in frame number 149 is **104
 
 Based on the above image, the raw acknowledge number in frame number 149 is **258040696**.
 
+## **Number 2**
+**Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!**
+
+**Solution:**
+to find out which server is used for the Jarkom website we look at the file in wireshark that has a protocol HTTP and we follow through the stream and we can see as stated on the image below that the server used in the website is "gunicorn"
+
+![2](https://github.com/idzakyfarhan/Jarkom-Modul-1-I04-2023/blob/main/IMG/Screenshot%202023-09-22%20at%2018.33.48.png)
+
+## **Number 3**
+**Dapin sedang belajar analisis jaringan. Bantulah Dapin untuk mengerjakan soal berikut:
+a. Berapa banyak paket yang tercapture dengan IP source maupun destination address adalah 239.255.255.250 dengan port 3702?
+b. Protokol layer transport apa yang digunakan?**
+
+**Solution:**
+to find the package that has been captured from source or destination from the IP of 239.255.255.250 and port 3702 we use the syntax of ip.src == 239.255.255.250||ip.dst==239.255.255.250 dan tcp.port==3702||udp.port==3702 and for point b we can see on the wireshark that it has the protocol of UDP
+
+![3](https://github.com/idzakyfarhan/Jarkom-Modul-1-I04-2023/blob/main/IMG/Screenshot%202023-09-22%20at%2018.46.49.png)
+
+## **Number 4**
+**Berapa nilai checksum yang didapat dari header pada paket nomor 130?**
+
+**Solution:**
+On the wireshark we can see the package number 130 and we can see the details and it has the checksum of 0x18e5
+
+![4](https://github.com/idzakyfarhan/Jarkom-Modul-1-I04-2023/blob/main/IMG/Screenshot%202023-09-22%20at%2018.51.22.png)
+
+## **Number 5**
+**Elshe menemukan suatu file packet capture yang menarik. Bantulah Elshe untuk menganalisis file packet capture tersebut.
+a. Berapa banyak packet yang berhasil di capture dari file pcap tersebut?
+b. Port berapakah pada server yang digunakan untuk service SMTP?
+c. Dari semua alamat IP yang tercapture, IP berapakah yang merupakan public IP?**
+
+**Solutions:**
+To open the zip file on the website decoding is needed in Wireshark and has information about the password, and when followed it will show a password that has not been decoded and to decode it using the website from Base64 and you will get the password 5implepas5word.
+
+![5](https://github.com/idzakyfarhan/Jarkom-Modul-1-I04-2023/blob/main/IMG/Screenshot%202023-09-22%20at%2018.58.19.png)
+
+and for point a we can get the total packets that is captured from the bottom right corner and it shows 60
+
+![5a](https://github.com/idzakyfarhan/Jarkom-Modul-1-I04-2023/blob/main/IMG/Screenshot%202023-09-22%20at%2019.02.47.png)
+
+For point b we did a test where the required port was between 25 or 1470 and the correct one was 25
+
+![5b](https://github.com/idzakyfarhan/Jarkom-Modul-1-I04-2023/blob/main/IMG/Screenshot%202023-09-22%20at%2019.04.55.png)
+
+For point c, the same logic is implemented on the IP used, there are only 2 IPs used and I tried 10.10.1.4 and 74.53.140.153 and the correct one is 74.53.140.153
+
+![5c](https://github.com/idzakyfarhan/Jarkom-Modul-1-I04-2023/blob/main/IMG/Screenshot%202023-09-22%20at%2019.07.09.png)
+
 ## **Number 6**
 **Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut.**
 
@@ -70,7 +119,13 @@ To find the package that go to IP 184.87.193.88 we can type on the filter bar **
 
 The query filter is : ```ip.src == 10.51.40.1 && ip.dst != 10.39.55.34```
 
+## **Number 10**
+**Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet**
 
+**Solution:**
+For number 10, I followed the telnet file and got the login credentials and password as stated below.
+
+![10](https://github.com/idzakyfarhan/Jarkom-Modul-1-I04-2023/blob/main/IMG/Screenshot%202023-09-22%20at%2019.10.50.png)
 
 
 
