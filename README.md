@@ -13,7 +13,7 @@
 
 Since the user wants to perform activities using the FTP (File Transfer Protocol) protocol, we will filter based on the FTP protocol only. After applying the filter, we will search for message info with the STOR command followed by the filename (because the user wants to upload a file).
 
------------
+![1A,B](https://github.com/idzakyfarhan/Jarkom-Modul-1-I04-2023/blob/main/IMG/Nomor%201ab.png)
 
 #### A. What is the raw sequence number in the packet that indicates this activity?
 
@@ -27,6 +27,9 @@ To view the response from the STOR activity, we just need to search for the mess
 
 #### C. What is the raw sequence number in the packet that indicates the response to this activity?
 
+
+![1C,D](https://github.com/idzakyfarhan/Jarkom-Modul-1-I04-2023/blob/main/IMG/nomor%201cd.png)
+
 As seen in the above image, the raw sequence number in frame number 149 is **1044861039**, which is the same as the raw acknowledge number in frame number 147.
 
 #### D. What is the raw acknowledge number in the packet that indicates the response to this activity?
@@ -38,12 +41,17 @@ Based on the above image, the raw acknowledge number in frame number 149 is **25
 
 **Solution :**
 
+![6](https://github.com/idzakyfarhan/Jarkom-Modul-1-I04-2023/blob/main/IMG/nomor%206.png)
+
+
 In the package number 7812 the source address is 104.18.14.101. By using the hint on the question that hinted a1 e5 u21 it shows an alphabet, therefore what we need to do is to change the ip address given on the package number 7812 into alphabet. Then we get 10 = J, 4 = D, 18 = R, 14 = N, 10 = J, 1 = A, So the answer that we looking for is **JDRNJA**
 
 ## **Number 7**
 **How many package that go to IP 184.87.193.88?**
 
 **Solution :**
+![7](https://github.com/idzakyfarhan/Jarkom-Modul-1-I04-2023/blob/main/IMG/nomor%207.png)
+
 
 To find the package that go to IP 184.87.193.88 we can type on the filter bar **ip.dst == 184.87.193.88** Then it will shows how many package that goes into IP 184.87.193.88, Therefore **there will be 6 package**.
 
@@ -51,10 +59,15 @@ To find the package that go to IP 184.87.193.88 we can type on the filter bar **
 
 **Provide a filter query so that Wireshark only captures all protocol packets destined for port 80! (If there are multiple ports, then sort them alphabetically)**
 
+![8](https://github.com/idzakyfarhan/Jarkom-Modul-1-I04-2023/blob/main/IMG/nomor%208.png)
+
+
 ## **Number 9**
 **Provide a filter query so that Wireshark only captures packets originating from the address 10.51.40.1 but not destined for the address 10.39.55.34!**
 
 **Solution :**
+![9](https://github.com/idzakyfarhan/Jarkom-Modul-1-I04-2023/blob/main/IMG/nomor%209.png)
+
 The query filter is : ```ip.src == 10.51.40.1 && ip.dst != 10.39.55.34```
 
 
